@@ -1,7 +1,8 @@
 function [f] = interpretSensorColour(v)
-% Sensorinterpretation der Farbe des Würfels, gibt den Farbwert zurück.
+% Sensorinterpretation der Farbe des Würfels, gibt den Farbwert in 'f' zurück.
+% Eingabewert 'v' ist der Rückgabewert(Vektor) der Funktion 'vRob.getSensorColor()' 
 %
-% Schema: [f] = interpretSensorColour()
+% Schema: [f] = interpretSensorColour(v)
 % Rückgabewerte:
 %   1 = R
 %   2 = G
@@ -10,7 +11,7 @@ function [f] = interpretSensorColour(v)
 %
 % 
 %*****************************************************
-% PST-Projekt/ [f] = interpretSensorColour()
+% PST-Projekt/ [f] = interpretSensorColour(v)
 % Versionsnummer   : 1.0 (12.12.2017)
 % erstellt am      : 05.12.2017
 % erstellt durch   : Sebastian Neumeier
@@ -20,18 +21,14 @@ function [f] = interpretSensorColour(v)
 %*****************************************************
 
 %%
-% Steuert den Sensor an und bekommt einen Zeilen Vektor der 3.Dim zurück
-% der in 'v' gespeichert wird
-%[v] = vRob.getSensorColor();
 
-
-% max(v) gibt den maximalsten Wert des Vektors 'v' zurück, 
-% bei '[~,f]' wäre '~'(unterdrückt) dieser Wert und 'f' die Position im
-% Vektor
+% '[~,f] = max(v)' gibt den maximalsten Wert des Vektors 'v' zurück, 
+% '~'(unterdrückt) ist dieser größte Wert und 'f' die Position
+% des selbigen im Vektor 'v'.
 [~,f] = max(v);
 
 
-% Wenn die Standartabweichung des Vektors <=15(ermittelter Wert) ist, ist die Farbe
+% Wenn die Standartabweichung des Vektors('v') <=15(ermittelter Wert) ist, ist die Farbe
 % schwarz -> Kein Wert
 if std(v)<= 15
     f=0;
