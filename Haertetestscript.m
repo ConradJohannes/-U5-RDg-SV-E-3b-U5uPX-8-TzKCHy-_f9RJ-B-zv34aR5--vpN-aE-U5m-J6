@@ -1,11 +1,11 @@
 %Haertetest script für die Farberkennung
 
-durchlaeufe=1000000;
+durchlaeufe=10000;
 fehler=0;
 
 for ii=1:durchlaeufe
     [g1, colorName] = textColorOut();
-    [f]=scanCubeColour(g1);
+    [f]=interpretSensorColor(g1);
     switch f
         case 1
             zz='red';
