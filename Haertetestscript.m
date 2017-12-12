@@ -4,8 +4,8 @@ durchlaeufe=100000;
 fehler=0;
 
 for ii=1:durchlaeufe
-    [g1, colorName] = textColorOut();
-    [f]=interpretSensorColour(g1);
+    [v, colorName] = textColorOut();
+    [f]=interpretSensorColour(v);
     switch f
         case 1
             zz='red';
