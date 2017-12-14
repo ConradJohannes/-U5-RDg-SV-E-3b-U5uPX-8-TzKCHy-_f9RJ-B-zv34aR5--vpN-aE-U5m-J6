@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Run>
+    <Position>
+        <New>
+            <X>4</X>
+            <Y>5</Y>
+            <Z>6</Z>
+        </New>
+    </Position>
+    <Angels>
+        <New>
+            <base>4</base>
+            <shoulder>5</shoulder>
+            <elbow>6</elbow>
+            <wrist>7</wrist>
+            <hand>0</hand>
+        </New>
+    </Angels>
+    <Target_Pattern>
+        <Row_1>
+            <Line_1>1</Line_1>
+            <Line_2>2</Line_2>
+            <Line_3>3</Line_3>
+        </Row_1>
+        <Row_2>
+            <Line_1>4</Line_1>
+            <Line_2>5</Line_2>
+            <Line_3>6</Line_3>
+       </Row_2>
+       <Row_3>
+            <Line_1>7</Line_1>
+            <Line_2>8</Line_2>
+            <Line_3>9</Line_3>
+        </Row_3>
+    </Target_Pattern>
+    <Current_Pattern>
+       <Row_1>
+            <Line_1>1</Line_1>
+            <Line_2>2</Line_2>
+            <Line_3>3</Line_3>
+       </Row_1>
+            <Row_2>
+            <Line_1>4</Line_1>
+            <Line_2>5</Line_2>
+            <Line_3>6</Line_3>
+        </Row_2>
+        <Row_3>
+            <Line_1>7</Line_1>
+            <Line_2>8</Line_2>
+            <Line_3>9</Line_3>
+        </Row_3>
+    </Current_Pattern>
+    <Other>
+        <Pause>0</Pause>
+    </Other>
+</Run>
+    
